@@ -1,4 +1,0 @@
-
-	int  b,int c
-if 	 a > b , m=n
-z =1

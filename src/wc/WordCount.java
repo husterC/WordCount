@@ -372,11 +372,21 @@ public class WordCount {
 				outputFile = args[i];          //输出命令后是输出目的文件
 			}
 			else{
-				Path.add(args[i]);
+				//Path.add(args[i]);
 				//int op = 0;
 				//aimFile = args[i];
-				//System.out.println(aimFile);
-				
+				//System.out.println(Path);
+				File directory = new File(".");
+				String tPath = "";
+				try {
+					tPath = directory.getCanonicalPath();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				String part = args[i].replace("*", "");
+				showFile(part,tPath);
+				//System.out.println(Path);
 			}
 		}
 		

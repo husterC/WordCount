@@ -1,6 +1,0 @@
-main , int  float  double
-float
-double,,,main  float
-main  int
-int,,,int
-double
